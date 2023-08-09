@@ -1,0 +1,21 @@
+[package]
+name = "rucene-ik"
+version = "0.1.0"
+edition = "2021"
+authors = ["jobdeng"]
+homepage = "https://jobdeng.com/rucene-ik"
+repository = "https://github.com/jobdeng/rucene-ik"
+readme = "./README.md"
+description = "ik Chinese tokenizer for Runcene"
+keywords = ["Rust","ik","Chinese","tokenizer", "Rucene"]
+license = "MIT"
+
+[dependencies]
+#rucene = {git="https://github.com/jobdeng/rucene.git", branch="nightly-2023-06-15"}
+#ik-rs = {git="https://github.com/jobdeng/ik-rs.git", branch="main"}
+
+#[patch."https://github.com/jobdeng/rucene.git"]
+rucene = {path="../rucene"}
+#[patch."https://github.com/jobdeng/ik-rs.git"]
+#[patch.crates-io]
+ik-rs = {path="../ik-rs"}
