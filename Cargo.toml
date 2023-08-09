@@ -11,11 +11,11 @@ keywords = ["Rust","ik","Chinese","tokenizer", "Rucene"]
 license = "MIT"
 
 [dependencies]
-#rucene = {git="https://github.com/jobdeng/rucene.git", branch="nightly-2023-06-15"}
-#ik-rs = {git="https://github.com/jobdeng/ik-rs.git", branch="main"}
+rucene = {git="https://github.com/jobdeng/rucene.git", branch="nightly-2023-06-15"}
+ik-rs = {git="https://github.com/jobdeng/ik-rs.git", branch="main"}
 
 #[patch."https://github.com/jobdeng/rucene.git"]
-rucene = {path="../rucene"}
+# rucene = {path="../rucene"}
 #[patch."https://github.com/jobdeng/ik-rs.git"]
 #[patch.crates-io]
-ik-rs = {path="../ik-rs"}
+# ik-rs = {path="../ik-rs"}
